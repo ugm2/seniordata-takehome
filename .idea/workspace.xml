@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="13c217fb-f5ce-4906-b39b-49d40666d25c" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="23jjxzQTHZZPjOZuTleG80BLUd7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Daten\Opply\01_Google Drive\Opply\07_Staff\Hiring\Technical\Senior Data Engineer\Takehome-Exercise" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.scraper">
+    <configuration name="scraper (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SeniorDataEngTask" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../../Opply/01_Google Drive/Opply/07_Staff/Hiring/Technical/Senior Data Engineer/Takehome-Exercise/SeniorDataEngTask" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../../../Opply/01_Google Drive/Opply/07_Staff/Hiring/Technical/Senior Data Engineer/Takehome-Exercise/SeniorDataEngTask/scraper.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scraper" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SeniorDataEngTask" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scraper.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scraper" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="SeniorDataEngTask" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../../../../Opply/01_Google Drive/Opply/07_Staff/Hiring/Technical/Senior Data Engineer/Takehome-Exercise/SeniorDataEngTask" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Daten\Opply\01_Google Drive\Opply\07_Staff\Hiring\Technical\Senior Data Engineer\Takehome-Exercise\SeniorDataEngTask\scraper.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.scraper (1)" />
+        <item itemvalue="Python.scraper" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="13c217fb-f5ce-4906-b39b-49d40666d25c" name="Default Changelist" comment="" />
+      <created>1642254640695</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1642254640695</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1642582463715">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1642582463715" />
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1642269837296" />
+    <state width="1899" height="351" key="GridCell.Tab.0.bottom" timestamp="1642581966766">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1829" height="422" key="GridCell.Tab.0.bottom/0.0.1920.1040/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1642424020088" />
+    <state width="1899" height="351" key="GridCell.Tab.0.bottom/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1642581966766" />
+    <state width="938" height="422" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642270228762" />
+    <state width="1899" height="351" key="GridCell.Tab.0.center" timestamp="1642581966766">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1829" height="422" key="GridCell.Tab.0.center/0.0.1920.1040/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1642424020088" />
+    <state width="1899" height="351" key="GridCell.Tab.0.center/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1642581966766" />
+    <state width="938" height="422" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642270228762" />
+    <state width="1899" height="351" key="GridCell.Tab.0.left" timestamp="1642581966766">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1829" height="422" key="GridCell.Tab.0.left/0.0.1920.1040/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1642424020088" />
+    <state width="1899" height="351" key="GridCell.Tab.0.left/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1642581966766" />
+    <state width="938" height="422" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642270228761" />
+    <state width="1899" height="351" key="GridCell.Tab.0.right" timestamp="1642581966766">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1829" height="422" key="GridCell.Tab.0.right/0.0.1920.1040/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1642424020088" />
+    <state width="1899" height="351" key="GridCell.Tab.0.right/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1642581966766" />
+    <state width="938" height="422" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642270228762" />
+    <state width="1899" height="351" key="GridCell.Tab.1.bottom" timestamp="1642581966766">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1829" height="422" key="GridCell.Tab.1.bottom/0.0.1920.1040/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1642424017627" />
+    <state width="1899" height="351" key="GridCell.Tab.1.bottom/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1642581966766" />
+    <state width="938" height="422" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1642270228762" />
+    <state width="1899" height="351" key="GridCell.Tab.1.center" timestamp="1642581966766">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1829" height="422" key="GridCell.Tab.1.center/0.0.1920.1040/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1642424017627" />
+    <state width="1899" height="351" key="GridCell.Tab.1.center/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1642581966766" />
+    <state width="938" height="422" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1642270228762" />
+    <state width="1899" height="351" key="GridCell.Tab.1.left" timestamp="1642581966766">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1829" height="422" key="GridCell.Tab.1.left/0.0.1920.1040/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1642424017627" />
+    <state width="1899" height="351" key="GridCell.Tab.1.left/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1642581966766" />
+    <state width="938" height="422" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1642270228762" />
+    <state width="1899" height="351" key="GridCell.Tab.1.right" timestamp="1642581966766">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1829" height="422" key="GridCell.Tab.1.right/0.0.1920.1040/0.-1080.1920.1040@0.-1080.1920.1040" timestamp="1642424017627" />
+    <state width="1899" height="351" key="GridCell.Tab.1.right/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1642581966766" />
+    <state width="938" height="422" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1642270228762" />
+    <state x="623" y="225" key="search.everywhere.popup" timestamp="1642580505817">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" key="search.everywhere.popup/0.0.1920.1040/0.-1080.1920.1040@0.0.1920.1040" timestamp="1642580505817" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/../../../../../Opply/01_Google Drive/Opply/07_Staff/Hiring/Technical/Senior Data Engineer/Takehome-Exercise/SeniorDataEngTask/scraper.py</url>
+          <line>69</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
