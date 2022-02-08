@@ -3,7 +3,7 @@ import json
 import random
 import requests
 import re
-
+from tqdm import tqdm
 
 header = {
     'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17',
@@ -26,7 +26,7 @@ proxies = ['tebssdjk:3aarsmkklrx1@45.57.254.235:6273/',
 
 
 session = requests.session()
-MAX_ATTEMPTS = 3  # Number of attempts to access a website
+MAX_ATTEMPTS = 5  # Number of attempts to access a website
 
 # Return random proxy
 def get_proxy():
@@ -52,7 +52,6 @@ def scrape_website(url):
 
         except Exception as e:
             print(e)
-
         current_attempt += 1
 
     print('Something went wrong when scraping ' + url)
@@ -66,12 +65,20 @@ def is_visible(element):
         return False
     return True
 
-if __name__ == "__main__":
-    data = json.load(open('./suppliers.json', 'r'))
-    html_soup = scrape_website(data[0]['rootDomain'])  # Sample scraping
-
-    if html_soup:
-        # Extracting text only
-        html_soup_text = html_soup.findAll(text=True)
-        html_soup_text_visible = '\n'.join(list(filter(is_visible, html_soup_text)))
-        html_soup_text_visible_cleaned = html_soup_text_visible.split()
+# Scrap suppliers from json
+def scrape_text_from_suppliers(json_filename: str, max_suppliers: int):
+    data = json.load(open(json_filename, 'r'))
+    docs = []
+    suppliers = []
+    for supplier in tqdm(data[:max_suppliers]):
+        suppliers.append(supplier['supplier'])
+        text = ''
+        pages = supplier['pages']
+        for page in pages:
+            html_soup = scrape_website(page)
+            if html_soup is not None:
+                html_soup_text = html_soup.findAll(text=True)
+                html_soup_text_visible = ''.join(list(filter(is_visible, html_soup_text)))
+                text += html_soup_text_visible
+        docs.append(text)
+    return docs, suppliers
