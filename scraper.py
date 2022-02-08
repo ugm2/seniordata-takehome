@@ -75,6 +75,3 @@ if __name__ == "__main__":
         html_soup_text = html_soup.findAll(text=True)
         html_soup_text_visible = '\n'.join(list(filter(is_visible, html_soup_text)))
         html_soup_text_visible_cleaned = html_soup_text_visible.split()
-
-        # Extracting image links only
-        img_links = [img.attrs.get("src").strip() for img in html_soup.find_all('img') if img.attrs.get("src")]
