@@ -1,9 +1,9 @@
 from sentence_transformers import SentenceTransformer
-from sentence_transformers.util import semantic_search
+from sentence_transformers.util import semantic_search, normalize_embeddings, dot_score
 import torch
 from typing import List
 import re
-import spacy
+from tok import sent_tokenize
 
 class SemanticSearch:
 
@@ -11,7 +11,6 @@ class SemanticSearch:
         self.embedder = SentenceTransformer(model_name)
         self.device = 'cuda' if torch.cuda.is_available() else 'cpu'
         self.embedder.to(self.device)
-        self.segmenter = spacy.load('en_core_web_sm')
 
     def preprocessing(self, texts: List[str]) -> List[str]:
         # Remove line breaks
@@ -29,15 +28,22 @@ class SemanticSearch:
         # Segment text into sentences
         text_sentences = []
         for t in texts:
-            doc = self.segmenter(t)
-            text_sentences.append([token.text for token in doc.sents])
+            sentences = sent_tokenize(t)
+            # Join tokens
+            sentences = list(map(lambda x: ' '.join(x), sentences))
+            text_sentences.append(sentences)
+        # Remove repeated sentences
+        text_sentences = list(map(lambda x: list(set(x)), text_sentences))
         return text_sentences
 
     def embed(self, texts: List[str]) -> List[torch.Tensor]:
         return self.embedder.encode(texts, convert_to_tensor=True)
 
-    def search(self, query: torch.Tensor, corpus: List[torch.Tensor], top_k=5) -> List[str]:
-        query.to(self.device)
-        corpus.to(self.device)
-        search_results = semantic_search([query], corpus, top_k=top_k)[0]
+    def search(self, query_embeddings: torch.Tensor, corpus_embeddings: torch.Tensor, top_k=5) -> List[str]:
+        query_embeddings.to(self.device)
+        corpus_embeddings.to(self.device)
+        corpus_embeddings = normalize_embeddings(corpus_embeddings)
+        query_embeddings = normalize_embeddings(query_embeddings)
+        # top_k is multiplied by 5 because we may have several relevant sentences per supplier
+        search_results = semantic_search(query_embeddings, corpus_embeddings, top_k=top_k*5, score_function=dot_score)[0]
         return search_results

@@ -4,6 +4,7 @@ import random
 import requests
 import re
 from tqdm import tqdm
+import os
 
 header = {
     'user-agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_4) AppleWebKit/601.5.17 (KHTML, like Gecko) Version/9.1 Safari/601.5.17',
@@ -65,20 +66,40 @@ def is_visible(element):
         return False
     return True
 
+# Clean supplier name
+def clean_supplier_name(name):
+    tokens = '?/\\:*"<>|'
+    for token in tokens:
+        name = name.replace(token, '')
+    return name
+
 # Scrap suppliers from json
-def scrape_text_from_suppliers(json_filename: str, max_suppliers: int):
+def scrape_text_from_suppliers(json_filename: str, folder_persistance: str = 'data', max_suppliers: int = -1):
     data = json.load(open(json_filename, 'r'))
+    data = data[:max_suppliers]
     docs = []
     suppliers = []
-    for supplier in tqdm(data[:max_suppliers]):
-        suppliers.append(supplier['supplier'])
-        text = ''
-        pages = supplier['pages']
-        for page in pages:
-            html_soup = scrape_website(page)
-            if html_soup is not None:
-                html_soup_text = html_soup.findAll(text=True)
-                html_soup_text_visible = ''.join(list(filter(is_visible, html_soup_text)))
-                text += html_soup_text_visible
+    if not os.path.exists(folder_persistance):
+        os.makedirs(folder_persistance)
+    for supplier in tqdm(data):
+        supplier_name = supplier['supplier']
+        suppliers.append(supplier)
+        # Clean supplier name
+        supplier_name = clean_supplier_name(supplier_name)
+        supplier_file = os.path.join(folder_persistance, supplier_name + '.txt')
+        if not os.path.exists(supplier_file):
+            text = ''
+            pages = supplier['pages']
+            for page in pages:
+                html_soup = scrape_website(page)
+                if html_soup is not None:
+                    html_soup_text = html_soup.findAll(text=True)
+                    html_soup_text_visible = ''.join(list(filter(is_visible, html_soup_text)))
+                    text += html_soup_text_visible
+            with open(supplier_file, 'w') as f:
+                f.write(text)
+        else:
+            with open(supplier_file, 'r') as f:
+                text = f.read()
         docs.append(text)
     return docs, suppliers
